@@ -1,0 +1,23 @@
+/* Characters Styles */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 50px;
+} 
+.cardContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+} 
+
+ .logo {
+    min-width: 25%; 
+    width: 30%;
+
+} 

@@ -1,0 +1,36 @@
+/* CardHome Style */
+
+
+  
+  .cardHome {
+    height: 300px;
+    width: 250px;
+    margin: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.959);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+  }
+
+  .cardImg{
+    max-height: 150px;
+    
+    
+  }
+
+  .titleContainer {
+      height: 50px;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.959);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+  
+  .cardTitle{
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    text-transform: uppercase;    
+  }
+  
