@@ -7,17 +7,16 @@ import logo from "./../../img/logo.png"
 
 function Episodes(){
     const [epiData, setEpiData] = useState(false);
+    const dataKeys = ["season", "episode", "link"]
 
     useEffect(()=>{
-        fetchData();    
-
+        fetchData();
     },[])
 
     async function fetchData(){
         const getData = await fetch("https://raw.githubusercontent.com/UncleJerry23/steven-universe-graphql-api/master/lib/utils/episodesSeeds/episodesFixed.json");
         const dataToJson = await getData.json();
-        setEpiData(dataToJson);
-        
+        setEpiData(dataToJson);        
     }
 
     
@@ -30,7 +29,7 @@ function Episodes(){
             <div className={styles.cardContainer}>
                 {   epiData && (
                         epiData.map((item, index)=>{                                     
-                            return <CardChar key={index} data={epiData[index]}/>
+                            return <CardChar key={index} dataKeys={dataKeys} data={epiData[index]}/>
                      }) 
                      )
                     

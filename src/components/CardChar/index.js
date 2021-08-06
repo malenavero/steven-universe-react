@@ -1,3 +1,5 @@
+//CardChar index.js
+
 import styles from "./CardChar.module.css" 
 
 function CardChar(props){
@@ -16,8 +18,8 @@ function CardChar(props){
                     {dataKeys.map((item, key)=>{  
                         const value = props.data[item]
                         return <li key={key} className={styles.item}>
-                                    <p className={styles.itemKey}>{item}:</p>
-                                    <p className={styles.itemValue}>{value?value:"No hay info"}</p>
+                                    { item === 'link' ? <a href={value} className={styles.itemKey} >Link</a> : <p className={styles.itemKey}>{item}:</p>}
+                                    <p className={styles.itemValue}>{item === "link" ? "" : value ? value :"No hay info"}</p>
                                </li>
                     })}
                 </ul>   

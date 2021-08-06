@@ -10,8 +10,7 @@ function Characters(){
     const dataKeys = ["species", "gem_type","gender_pronoun"]
 
     useEffect(()=>{
-        fetchData();    
-
+        fetchData();
     },[])
 
     async function fetchData(){
@@ -21,8 +20,6 @@ function Characters(){
         
     }
 
-    
-
     return (
         <>
         <Nav /> 
@@ -30,7 +27,7 @@ function Characters(){
             <img className = {styles.logo} src={logo} alt='logo steven universe'/>
             <div className={styles.cardContainer}>
                 {   charData && (
-                        charData.map((item, index)=>{                                     
+                        charData.map((item, index)=>{                                    
                             return <CardChar key={index} dataKeys={dataKeys} data={charData[index]}/>
                      }) 
                      )

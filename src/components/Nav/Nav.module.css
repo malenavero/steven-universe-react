@@ -22,13 +22,9 @@
     text-shadow: 2px 2px 2px rgb(252,50,22); 
 }
 
-
 .link:hover {
     border: 2px solid rgba(254,255,33,255);
 }
-
-
-
 
 @media  (max-width: 1064px) {
     .navList {
