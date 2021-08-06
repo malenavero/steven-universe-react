@@ -1,7 +1,7 @@
 import Nav from "./../../components/Nav"
 import styles from "./Episodes.module.css"
 import {useState, useEffect} from 'react'
-import CardChar from "./../../components/CardChar"
+import CardItem from "./../../components/CardItem"
 import logo from "./../../img/logo.png"
 
 
@@ -28,8 +28,8 @@ function Episodes(){
             <img className = {styles.logo} src={logo} alt='logo steven universe'/>
             <div className={styles.cardContainer}>
                 {   epiData && (
-                        epiData.map((item, index)=>{                                     
-                            return <CardChar key={index} dataKeys={dataKeys} data={epiData[index]}/>
+                        epiData.map((item, index)=>{                                    
+                            return <CardItem key={index} dataKeys={dataKeys} data={epiData[index]}/>
                      }) 
                      )
                     

@@ -1,12 +1,14 @@
 import Nav from "./../../components/Nav"
 import styles from "./Songs.module.css"
 import {useState, useEffect} from 'react'
-import CardChar from "./../../components/CardChar"
+import CardItem from "./../../components/CardItem"
 import logo from "./../../img/logo.png"
 
 
 function Characters(){
     const [charData, setCharData] = useState(false);
+    const dataKeys = ["composers", "vocalilist", "lyrics"]
+
 
     useEffect(()=>{
         fetchData();    
@@ -16,8 +18,7 @@ function Characters(){
     async function fetchData(){
         const getData = await fetch("https://raw.githubusercontent.com/UncleJerry23/steven-universe-graphql-api/master/lib/utils/songsSeeds/songsFixed.json");
         const dataToJson = await getData.json();
-        setCharData(dataToJson);
-        
+        setCharData(dataToJson);        
     }    
 
     return (
@@ -28,7 +29,7 @@ function Characters(){
             <div className={styles.cardContainer}>
                 {   charData && (
                         charData.map((item, index)=>{                                     
-                            return <CardChar key={index} data={charData[index]}/>
+                            return <CardItem key={index} dataKeys={dataKeys} data={charData[index]}/>
                      }) 
                      )
                     

@@ -1,7 +1,7 @@
 import Nav from "./../../components/Nav"
 import styles from "./Characters.module.css"
 import {useState, useEffect} from 'react'
-import CardChar from "./../../components/CardChar"
+import CardItem from "./../../components/CardItem"
 import logo from "./../../img/logo.png"
 
 
@@ -28,7 +28,7 @@ function Characters(){
             <div className={styles.cardContainer}>
                 {   charData && (
                         charData.map((item, index)=>{                                    
-                            return <CardChar key={index} dataKeys={dataKeys} data={charData[index]}/>
+                            return <CardItem key={index} dataKeys={dataKeys} data={charData[index]}/>
                      }) 
                      )
                     

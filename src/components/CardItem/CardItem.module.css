@@ -1,4 +1,4 @@
-/* Card Char Styles */
+/* CardItem Styles */
 .card {
     height: 300px;
     width: 250px;
@@ -87,4 +87,8 @@
 .card:hover > .cap{
     visibility: visible;
     opacity: 1;
+}
+
+.itemLyric {
+    cursor: pointer;
 }
