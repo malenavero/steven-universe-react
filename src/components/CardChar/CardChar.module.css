@@ -44,7 +44,7 @@
         position: absolute;
         width: 250px;
         height: 300px;
-        background-color: rgba(0, 0, 0, 0.568);
+        background-color: rgba(174, 255, 251, 0.568);
         padding: 10px;
         transition-property: opacity, visibility;
         transition-duration: 0.5s, 0.5s;
