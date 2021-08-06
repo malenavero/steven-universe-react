@@ -1,18 +1,32 @@
-import styles from "./CardChar.module.css"
+import styles from "./CardChar.module.css" 
 
 function CardChar(props){
-    const {name, image} = props.data
-    console.log(props)
+    //recibe un array (data keys) con los keys a a listar del json
+    const {dataKeys} = props;    
+    const {name, image} = props.data;
 
     return (
-            <div className={styles.card}>     
-                <p className={styles.name}>{name}</p>
-                <div className={styles.imgContainer}>
-                    <img className={styles.cardImg} src={image} alt={name}/>
-                </div>                
-            </div>
-
-)
+        <article className={styles.card}>
+            <section className={styles.nameContainer}>
+                <h2 /* className={styles.name} */>{name}</h2>
+            </section>
+            <section className={styles.cap}>
+                <h2>{name}</h2>
+                <ul>
+                    {dataKeys.map((item, key)=>{  
+                        const value = props.data[item]
+                        return <li key={key} className={styles.item}>
+                                    <p className={styles.itemKey}>{item}:</p>
+                                    <p className={styles.itemValue}>{value?value:"No hay info"}</p>
+                               </li>
+                    })}
+                </ul>   
+            </section>
+            <section className={styles.imgContainer}>
+                <img className={styles.cardImg} src={image} alt={name}/>
+            </section>
+        </article>  
+    )
 }
 
 export default CardChar;

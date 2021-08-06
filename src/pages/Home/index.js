@@ -1,4 +1,5 @@
 // Info taken from: UncleJerry23/steven-universe-graphql-api 
+
 import styles from './Home.module.css';
 // Components
 import CardHome from '../../components/CardHome';

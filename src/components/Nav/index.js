@@ -11,7 +11,7 @@ function Nav (){
             {
                 navItems.map((item, index)=>{
                     let linkTo = `/${item}`.toLowerCase();
-                    return <Link to={linkTo} key={index}>{item}</Link>
+                    return <Link className={styles.link}to={linkTo} key={index}>{item}</Link>
                 })
             }
         </ul>

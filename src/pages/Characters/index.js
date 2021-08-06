@@ -7,6 +7,7 @@ import logo from "./../../img/logo.png"
 
 function Characters(){
     const [charData, setCharData] = useState(false);
+    const dataKeys = ["species", "gem_type","gender_pronoun"]
 
     useEffect(()=>{
         fetchData();    
@@ -30,7 +31,7 @@ function Characters(){
             <div className={styles.cardContainer}>
                 {   charData && (
                         charData.map((item, index)=>{                                     
-                            return <CardChar key={index} data={charData[index]}/>
+                            return <CardChar key={index} dataKeys={dataKeys} data={charData[index]}/>
                      }) 
                      )
                     
