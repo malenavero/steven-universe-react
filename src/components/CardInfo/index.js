@@ -9,12 +9,12 @@ function CardInfo (props){
     const element = <FontAwesomeIcon icon={faTimesCircle} className={styles.icon}  onClick={callback}  />
 
     return (
-        <div className={styles.container}>
-            {element}
-            <p className={styles.lyrics}>{lyrics}</p>
-        </div>
+        <article className={styles.container}>
+            <header className={styles.iconContainer}>{element}</header>
+            <main><p className={styles.lyrics}>{lyrics}</p></main>          
+            
+        </article>
     )
-
 }
 
 export default CardInfo;
