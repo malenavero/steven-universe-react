@@ -43,7 +43,7 @@ function CardItem(props){
                                         : item=== "lyrics" ?
                                             <p className={styles.itemLyric} lyrics={value} onClick={showLyrics}>Sing Out Loud...</p>
                                         : <p className={styles.itemValue}>
-                                            {value ? value : "No hay info"}
+                                            {value ? value : "No info"}
                                           </p>
                                     }                                    
                                </li>
