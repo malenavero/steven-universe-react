@@ -19,10 +19,10 @@
 .nameContainer h2 {
     max-width: 100%;
     font-size: 1.2em;
+    margin: 2px; 
     color: rgba(254,254,26,255);
     text-align: center;
-    text-transform: uppercase; 
-    margin: 2px; 
+    text-transform: uppercase;     
     text-shadow: 2px 2px 2px rgb(252,50,22);
 }
 
