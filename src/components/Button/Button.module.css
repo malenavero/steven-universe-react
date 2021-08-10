@@ -1,14 +1,13 @@
 .button {
     background-color: rgb(196,243,251);
     border: 3px solid rgba(254,254,26,255);
-    padding: 25px;
-    font-size: 2em;
+    padding: 20px;
+    font-size: 1.5em;
     margin: 100px;
     color: rgba(254,254,26,255);
     text-align: center;
     text-transform: uppercase;     
-    text-shadow: 2px 2px 2px rgb(252,50,22);
-    
+    text-shadow: 2px 2px 2px rgba(252, 49, 22, 0.938);
     border-radius: 15%;
     cursor: pointer;      
 }
@@ -18,5 +17,5 @@
 }
 
 .button:hover{
-    box-shadow: 2px 2px 2px rgb(252,50,22);
+    box-shadow: 1px 1px 2px rgba(252, 49, 22, 0.719);
 }

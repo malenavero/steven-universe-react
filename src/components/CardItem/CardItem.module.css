@@ -18,7 +18,7 @@
 
 .nameContainer h2 {
     max-width: 100%;
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 2px; 
     color: rgba(254,254,26,255);
     text-align: center;
@@ -51,6 +51,10 @@
         transition-duration: 0.5s, 0.5s;
         transition-timing-function: ease-in-out; 
         background-color: #ca7bcae3;
+        line-height:20px;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px  rgb(255, 70, 70);
+
         
 }
 
@@ -83,7 +87,7 @@
     line-height:20px;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px  rgb(255, 70, 70);
-    letter-spacing: 00.25em;
+    
     
 }
 
