@@ -44,15 +44,17 @@
         position: absolute;
         width: 250px;
         height: 300px;
-        background-color: rgb(119, 232, 251);
+        background-color: rgb(7, 7, 7);
         padding: 10px;
         transition-property: opacity, visibility;
         transition-duration: 0.5s, 0.5s;
         transition-timing-function: ease-in-out;
-        color: rgb(255, 255, 255); 
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 2px rgb(255, 40, 40);
         font-weight: bold;
         visibility:hidden;
-        opacity: 0;   
+        opacity: 0; 
+        
 }
 
 .cap h2 {
@@ -68,20 +70,24 @@
 .cap ul{
     text-transform: capitalize;  
     width: 100%;
-    margin: 5px;    
+    margin: 5px;
+      
 }
 
 .itemKey{
     font-weight: bolder;
     text-transform: uppercase;
     color: yellow; 
-    text-shadow: 0.5px 0.5px 0.5px  rgb(255, 38, 38); 
+    text-shadow: 1px 1px 1px  rgb(255, 38, 38); 
     letter-spacing: 0.25em;   
 }
 
 .itemValue{
     line-height:20px;
     color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px  rgb(255, 70, 70);
+    letter-spacing: 00.25em;
+    
 }
 
 .card:hover > .cap{

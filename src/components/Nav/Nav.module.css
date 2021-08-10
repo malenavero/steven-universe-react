@@ -10,6 +10,7 @@
     overflow: hidden;
     position: fixed;
     font-size: 1.5em;
+    z-index: 5;  
 }
 .link {
     display: flex;
