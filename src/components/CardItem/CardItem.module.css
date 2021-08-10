@@ -38,13 +38,14 @@
 }
 
 .cap{
+        visibility:hidden;
+        opacity: 0;
         display: flex;
         flex-direction: column;
         justify-content:space-evenly;
         position: absolute;
         width: 250px;
-        height: 300px;
-        background-color: rgb(7, 7, 7);
+        height: 300px;        
         padding: 10px;
         transition-property: opacity, visibility;
         transition-duration: 0.5s, 0.5s;
@@ -52,8 +53,8 @@
         color: rgb(255, 255, 255);
         text-shadow: 2px 2px 2px rgb(255, 40, 40);
         font-weight: bold;
-        visibility:hidden;
-        opacity: 0; 
+         
+        background-color: rgb(251,203,251);
         
 }
 
