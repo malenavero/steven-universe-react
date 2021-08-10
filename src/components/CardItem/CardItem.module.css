@@ -49,12 +49,8 @@
         padding: 10px;
         transition-property: opacity, visibility;
         transition-duration: 0.5s, 0.5s;
-        transition-timing-function: ease-in-out;
-        color: rgb(255, 255, 255);
-        text-shadow: 2px 2px 2px rgb(255, 40, 40);
-        font-weight: bold;
-         
-        background-color: rgb(251,203,251);
+        transition-timing-function: ease-in-out; 
+        background-color: #ca7bcae3;
         
 }
 
